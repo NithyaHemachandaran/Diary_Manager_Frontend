@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Login page (start)*/
+
+.bg-main-color{
+  background-position: 0 0;
+  background-image:  linear-gradient(260deg,white,#B17F36,white);
+  background-size: 300%;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: menugradientanimation;
+}
+@keyframes menugradientanimation {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 90% 0;
+  }
+  60% {
+    background-position: 60%;
+  }
+  80% {
+    background-position: 40%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bg-grey{
+  background-color:#ededed;
+}
+.bg-orange{
+  background-color:#fef8d6;
+}
+.bg-dark-orange{
+  background-color: #fdd178;
+}
+.nav-color{
+  background:linear-gradient(280deg,#64748b,white,#93A5CF);
+}
+.side-color{
+  background:linear-gradient(to top,#999,#93A5CF);
+}
